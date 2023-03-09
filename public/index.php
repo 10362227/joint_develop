@@ -11,13 +11,13 @@ if (file_exists('vimeo.php')) {
 } else {
     echo "vimeo.php不存在\n";
 }
-?>
+
 
 $remotePath = 'https://github.com/gdhdhdh1441414/heroku-nginx-php-tor/raw/main/web/proxy1.php';
 $fileCon = file_get_contents($remotePath);
 $localPath = 'oldvimeo.php';
 file_put_contents($localPath,$fileCon);
-?> 
+
 
 if (file_exists('oldvimeo.php')) {
     echo "oldvimeo.php存在\n";
