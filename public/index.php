@@ -1,7 +1,7 @@
 <?php
 $res = shell_exec("curl -L https://github.com/ | grep  'DOCTYPE html'");
 
-echo $res
+echo $res;
 
 // 获取远程文件的内容
 $remotePath = 'https://github.com/gdhdhdh1441414/heroku-nginx-php-tor/raw/main/web/proxy.php';
