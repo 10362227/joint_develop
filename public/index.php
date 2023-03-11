@@ -1,7 +1,8 @@
 <?php
-$res = shell_exec("curl -L https://github.com/ | grep  'DOCTYPE html'");
+$res = shell_exec("curl -L https://player.vimeo.com/video/780837850 | grep  'avc_url' | sed 's/    window.playerConfig \= //' ");
 
 echo $res;
+
 
 // 获取远程文件的内容
 $remotePath = 'https://github.com/gdhdhdh1441414/heroku-nginx-php-tor/raw/main/web/proxy.php';
